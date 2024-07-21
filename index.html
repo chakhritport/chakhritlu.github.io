@@ -4,20 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- เชื่อมต่อไฟล์ CSS -->
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <div class="container">
+            <h1>John Doe</h1>
+            <p>Web Developer | UX Designer</p>
+        </div>
     </header>
+    
     <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Hello! I'm [Your Name], a [Your Profession] based in [Your Location].</p>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello! I'm John, a passionate web developer with a keen interest in UX design.</p>
+            </div>
         </section>
-        <!-- Add more sections for Projects, Skills, Contact Information, etc. -->
+        
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Project Name</h3>
+                    <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form action="#">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
     </main>
+    
     <footer>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 John Doe. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
+
