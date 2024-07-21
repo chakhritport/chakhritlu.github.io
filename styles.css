@@ -1,11 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 header {
-    background-color: #333; /* สีพื้นหลังของ header */
-    color: #fff; /* สีข้อความของ header */
+    background-color: #333;
+    color: #fff;
     padding: 20px;
-    transition: transform 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงอย่างนุ่มนวล */
-  }
-  
-  header:hover {
-    transform: translateY(10px); /* เลื่อน header ลง 10px เมื่อชี้เมาส์ hover ไปที่ header */
-  }
-  
+    position: fixed;
+    top: -100px; /* ให้ header ซ่อนไว้ที่ด้านบนของหน้าจอ */
+    width: 100%;
+    transition: top 0.3s ease;
+    z-index: 1000; /* ให้ header อยู่ด้านหน้าสุด */
+}
+
+header.show {
+    top: 0; /* เมื่อเลื่อนลงมาแล้วให้ header ปรากฏ */
+}
+
+main {
+    padding-top: 100px; /* เพื่อให้เนื้อหาหลัง header มีพื้นที่ด้านบน */
+    /* ใส่ styles อื่นๆ ตามต้องการ */
+}
