@@ -16,6 +16,7 @@ body {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
+    flex: 1;
 }
 
 header {
@@ -84,6 +85,7 @@ p {
 }
 
 .project a:hover {
+    transition: all 0.3s ease;
     color: #007bff;
 }
 
