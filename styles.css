@@ -1,0 +1,11 @@
+header {
+    background-color: #333; /* สีพื้นหลังของ header */
+    color: #fff; /* สีข้อความของ header */
+    padding: 20px;
+    transition: transform 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงอย่างนุ่มนวล */
+  }
+  
+  header:hover {
+    transform: translateY(10px); /* เลื่อน header ลง 10px เมื่อชี้เมาส์ hover ไปที่ header */
+  }
+  
