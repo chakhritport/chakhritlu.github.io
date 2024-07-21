@@ -20,46 +20,16 @@ body {
 }
 
 header {
-    display: flex;
     background-color: #333;
     color: #fff;
     width: 100%;
     padding: 8px;
-    top: -100px;
-    transition: transform 0.3s ease;
-    z-index: 1000;
 }
 
-header.show {
-    top: 0;
-}
-
-header:hover {
-    transform: translateY(10px);
-}
 
 header h1 {
     font-size: 3em;
     text-align: left;
 }
 
-header h2 {
-    font-size: 3em;
-    text-align: left;
-    color: #fff;
-}
 
-header p {
-    font-size: 1.5em;
-    margin-top: 10px;
-    color: #fff;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    bottom: 0;
-    width: 100%;
-}
