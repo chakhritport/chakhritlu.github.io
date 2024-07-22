@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #414141;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between; /* จัดตำแหน่ง header จากซ้ายไปขวา */
+    align-items: center; /* จัดตำแหน่งภายใน header แนวตั้งตรงกลาง */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .left-content {
+    flex: 1; /* ให้ left-content ยืดขยายตามพื้นที่ที่เหลือ */
+  }
+  
+  .right-content {
+    flex: 1; /* ให้ right-content ยืดขยายตามพื้นที่ที่เหลือ */
+    justify-content: space-around;
+
+  }
+
+  .right-content nav ul li a {
+    color: #fff;
+  }
+  
+  .right-content ul li {
+    
+    margin-right: 100px;
+    display: inline-block; /* จัดให้รายการ nav แสดงในแนวนอน */
+    
+  }
+  
+  .right-content nav ul li a {
+    padding: 5px 10px;
+    transition: background-color 0.3s; /* เพิ่ม transition เมื่อ hover */
+  }
+  
+  .right-content nav ul li  a:hover {
+    color: #1e90ff; /* เปลี่ยนสีตัวอักษรเป็นสีน้ำเงิน */
+    
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    img {
+        width: 100%;
+        height: 900px; /* กำหนดความสูงของรูปภาพเป็น 300px */
+        object-fit: cover; /* ให้รูปภาพทำการ fill ใน container โดยไม่ทำให้ตกขอบ */
+        filter: brightness(70%); /* ลดความสว่างลงเป็น 50% */
+    }
+
+    .image-container {
+        position: relative; /* เพื่อให้สามารถใช้ absolute positioning กับ h1.port ได้ */
+    }
+    h1.port {
+        position: absolute;
+        top: 50%; /* ย้ายขึ้นมาที่ 50% ของ .image-container */
+        left: 50%; /* ย้ายไปที่ 50% ของ .image-container */
+        transform: translate(-50%, -50%); /* ย้ายตำแหน่งของ h1.port ให้อยู่ตรงกลาง */
+        color: white; /* ตั้งสีตัวอักษร */
+        padding: 10px 20px; /* กำหนด padding */
+    }
+  }
