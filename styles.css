@@ -1,6 +1,7 @@
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #414141;
+    background-color: #686868;
     padding: 20px;
   }
   
@@ -8,11 +9,19 @@ body {
     display: flex;
     justify-content: space-between; /* จัดตำแหน่ง header จากซ้ายไปขวา */
     align-items: center; /* จัดตำแหน่งภายใน header แนวตั้งตรงกลาง */
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8);
     color: #fff;
+    position: fixed;
+    top: 0;
     padding: 10px 20px;
+    height: 70px;
+    width: 100%; /* ขยายเต็มความกว้าง */
+    z-index: 1000; /* ให้ขึ้นหน้า */
+    backdrop-filter: blur(1px);
   }
-  
+  .menu-item a {
+    font-size: 25px; /* เพิ่มขนาดอักษรเป็นตัวอย่าง */
+  }
   .left-content {
     flex: 1; /* ให้ left-content ยืดขยายตามพื้นที่ที่เหลือ */
   }
@@ -24,7 +33,7 @@ body {
   }
 
   .right-content nav ul li a {
-    color: #fff;
+    color: #ffffff;
   }
   
   .right-content ul li {
@@ -56,15 +65,16 @@ body {
         filter: brightness(70%); /* ลดความสว่างลงเป็น 50% */
     }
 
-    .image-container {
-        position: relative; /* เพื่อให้สามารถใช้ absolute positioning กับ h1.port ได้ */
-    }
+
     h1.port {
         position: absolute;
         top: 50%; /* ย้ายขึ้นมาที่ 50% ของ .image-container */
         left: 50%; /* ย้ายไปที่ 50% ของ .image-container */
         transform: translate(-50%, -50%); /* ย้ายตำแหน่งของ h1.port ให้อยู่ตรงกลาง */
-        color: white; /* ตั้งสีตัวอักษร */
+        color: rgb(255, 255, 255); /* ตั้งสีตัวอักษร */
         padding: 10px 20px; /* กำหนด padding */
     }
+
+
+
   }
