@@ -54,6 +54,8 @@ body {
   }
 
   .container{
+    background-color: #3d3d3d;
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,6 +67,7 @@ body {
         filter: brightness(70%); /* ลดความสว่างลงเป็น 50% */
     }
     .logo1 {
+      border: 2px solid rgb(117, 117, 117);
       width: 600px; /* ปรับความกว้างตามต้องการ */
       height: auto; /* รักษาอัตราส่วนของรูปภาพ */
       display: block; /* ให้แสดงเป็นบล็อก */
@@ -75,9 +78,31 @@ body {
   }
 
     .about{
+      color: #ffffff;
+      text-align: left;
       margin-top: -600px;
       margin-left: 800px;
     }
+
+    .about  h2{
+      
+      font-weight: 800;
+    }
+
+    .about h4{
+      font-weight: 600;
+    }
+
+    .about ul {
+      padding: 0;
+      margin-left: 0px;
+  }
+  
+  .about ul li {
+      margin-right: 300px; /* ระยะห่างของรายการ */
+      text-align: left;
+  }
+  
 
     h1.port {
         position: absolute;
