@@ -1,3 +1,11 @@
+@keyframes moveText {
+  from { transform: translateY(0); }
+  to { transform: translateY(-20px); }
+}
+
+.move-text {
+  animation: moveText 0.5s ease infinite alternate;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -7,6 +15,7 @@ body {
   }
   
   .header {
+    font-weight: 700;
     display: flex;
     justify-content: space-between; /* จัดตำแหน่ง header จากซ้ายไปขวา */
     align-items: center; /* จัดตำแหน่งภายใน header แนวตั้งตรงกลาง */
@@ -27,7 +36,14 @@ body {
   }
   
   .left-content {
+    
     flex: 1; /* ให้ left-content ยืดขยายตามพื้นที่ที่เหลือ */
+  }
+
+  .left-content h2{
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
   .right-content {
@@ -60,7 +76,6 @@ body {
   .container{
     background-color: #3d3d3d;
     border: 1px solid black;
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -77,16 +92,16 @@ body {
       width: 600px; /* ปรับความกว้างตามต้องการ */
       height: auto; /* รักษาอัตราส่วนของรูปภาพ */
       display: block; /* ให้แสดงเป็นบล็อก */
-      margin: 50px;
+      margin-top: 100px;
       margin-right: 1000px; /* จัดให้รูปภาพตรงกลางทางนอน */
       
   }
 
     .about{
-      
+      padding:100px;
       color: #ffffff;
       text-align: left;
-      margin-top: -600px;
+      margin-top: -700px;
       margin-left: 800px;
     }
 
@@ -111,61 +126,68 @@ body {
   
 
     h1.port {
+        font-family: "Anton SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 130px;
+        letter-spacing: 15px;
         position: absolute;
-        top: 50%; /* ย้ายขึ้นมาที่ 50% ของ .image-container */
-        left: 50%; /* ย้ายไปที่ 50% ของ .image-container */
+        opacity: 60%;
+        top: 60%; /* ย้ายขึ้นมาที่ 50% ของ .image-container */
+        left: 25%; /* ย้ายไปที่ 50% ของ .image-container */
         transform: translate(-50%, -50%); /* ย้ายตำแหน่งของ h1.port ให้อยู่ตรงกลาง */
         color: rgb(255, 255, 255); /* ตั้งสีตัวอักษร */
         padding: 10px 20px; /* กำหนด padding */
     }
 
+  .portfo{
+    background-color: #505050;
+  }
     h1.skill{
       color: #ffffff;
-      margin-top: 100px;
+      margin: 100px;
+
     }
 
     .logo2{
-      width: 650px; /* ปรับความกว้างตามต้องการ */
+      width: 550px; /* ปรับความกว้างตามต้องการ */
       height: auto; /* รักษาอัตราส่วนของรูปภาพ */
       display: block; /* ให้แสดงเป็นบล็อก */
-      margin: 50px;
-      margin-right: 1000px; /* จัดให้รูปภาพตรงกลางทางนอน */
+      margin-top: -70px;
+      margin-left: 100px; /* จัดให้รูปภาพตรงกลางทางนอน */
     }
 
     .logo3{
-      width: 600px; /* ปรับความกว้างตามต้องการ */
+      width: 500px; /* ปรับความกว้างตามต้องการ */
       height: auto; /* รักษาอัตราส่วนของรูปภาพ */
       display: block; /* ให้แสดงเป็นบล็อก */
-      margin: 50px;
-      margin-left: 600px; /* จัดให้รูปภาพตรงกลางทางนอน */
-      margin-top: -500px;
+      margin-left: 650px; /* จัดให้รูปภาพตรงกลางทางนอน */
+      margin-top: -380px;
     }
 
     .logo4{
-      width: 580px; /* ปรับความกว้างตามต้องการ */
+      width: 480px; /* ปรับความกว้างตามต้องการ */
       height: auto; /* รักษาอัตราส่วนของรูปภาพ */
       display: block; /* ให้แสดงเป็นบล็อก */
-      margin: 50px;
-      margin-left: 1150px; /* จัดให้รูปภาพตรงกลางทางนอน */
-      margin-top: -470px;
+      margin-left: 1200px; /* จัดให้รูปภาพตรงกลางทางนอน */
+      margin-top: -340px;
     }
 
     .logo5{
-      width: 580px; /* ปรับความกว้างตามต้องการ */
+      width: 480px; /* ปรับความกว้างตามต้องการ */
       height: auto; /* รักษาอัตราส่วนของรูปภาพ */
       display: block; /* ให้แสดงเป็นบล็อก */
-      margin: 50px;
-      margin-left: 300px;
-      margin-top: 10px;
+      margin-left: 400px;
+      margin-top: 50px;
+      
     }
 
     .logo6{
-      width: 580px; /* ปรับความกว้างตามต้องการ */
+      width: 480px; /* ปรับความกว้างตามต้องการ */
       height: auto; /* รักษาอัตราส่วนของรูปภาพ */
       display: block; /* ให้แสดงเป็นบล็อก */
-      margin: 50px;
       margin-left: 900px;
-      margin-top: -450px;
+      margin-top: -350px;
     }
 
   }
