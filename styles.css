@@ -18,6 +18,7 @@ body {
     height: 70px;
     width: 100%; /* ขยายเต็มความกว้าง */
     z-index: 1000; /* ให้ขึ้นหน้า */
+    
     backdrop-filter: blur(1px);
   }
   .menu-item a {
@@ -69,6 +70,8 @@ body {
         object-fit: cover; /* ให้รูปภาพทำการ fill ใน container โดยไม่ทำให้ตกขอบ */
         filter: brightness(70%); /* ลดความสว่างลงเป็น 50% */
     }
+
+  
     .logo1 {
       border: 2px solid rgb(143, 143, 143);
       width: 600px; /* ปรับความกว้างตามต้องการ */
@@ -77,7 +80,6 @@ body {
       margin: 50px;
       margin-right: 1000px; /* จัดให้รูปภาพตรงกลางทางนอน */
       
-
   }
 
     .about{
@@ -117,8 +119,53 @@ body {
         padding: 10px 20px; /* กำหนด padding */
     }
 
-  
-  
+    h1.skill{
+      color: #ffffff;
+      margin-top: 100px;
+    }
 
+    .logo2{
+      width: 650px; /* ปรับความกว้างตามต้องการ */
+      height: auto; /* รักษาอัตราส่วนของรูปภาพ */
+      display: block; /* ให้แสดงเป็นบล็อก */
+      margin: 50px;
+      margin-right: 1000px; /* จัดให้รูปภาพตรงกลางทางนอน */
+    }
+
+    .logo3{
+      width: 600px; /* ปรับความกว้างตามต้องการ */
+      height: auto; /* รักษาอัตราส่วนของรูปภาพ */
+      display: block; /* ให้แสดงเป็นบล็อก */
+      margin: 50px;
+      margin-left: 600px; /* จัดให้รูปภาพตรงกลางทางนอน */
+      margin-top: -500px;
+    }
+
+    .logo4{
+      width: 580px; /* ปรับความกว้างตามต้องการ */
+      height: auto; /* รักษาอัตราส่วนของรูปภาพ */
+      display: block; /* ให้แสดงเป็นบล็อก */
+      margin: 50px;
+      margin-left: 1150px; /* จัดให้รูปภาพตรงกลางทางนอน */
+      margin-top: -470px;
+    }
+
+    .logo5{
+      width: 580px; /* ปรับความกว้างตามต้องการ */
+      height: auto; /* รักษาอัตราส่วนของรูปภาพ */
+      display: block; /* ให้แสดงเป็นบล็อก */
+      margin: 50px;
+      margin-left: 300px;
+      margin-top: 10px;
+    }
+
+    .logo6{
+      width: 580px; /* ปรับความกว้างตามต้องการ */
+      height: auto; /* รักษาอัตราส่วนของรูปภาพ */
+      display: block; /* ให้แสดงเป็นบล็อก */
+      margin: 50px;
+      margin-left: 900px;
+      margin-top: -450px;
+    }
 
   }
