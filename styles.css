@@ -1,4 +1,4 @@
-
+@media only screen and (max-width: 1920px) {
 @keyframes moveText {
   from { transform: translateY(0); }
   to { transform: translateY(-20px); }
@@ -212,3 +212,4 @@ body {
     }
 
   }
+}
