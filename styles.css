@@ -156,6 +156,10 @@ body {
       margin-top: -70px;
       margin-left: 100px; /* จัดให้รูปภาพตรงกลางทางนอน */
     }
+    .logo2:hover {
+      filter: brightness(150%); /* เพิ่มความสว่างของรูปภาพเมื่อ hover */
+      transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงเรื่อยๆ */
+    }
 
     .logo3{
       width: 500px; /* ปรับความกว้างตามต้องการ */
@@ -164,6 +168,10 @@ body {
       margin-left: 650px; /* จัดให้รูปภาพตรงกลางทางนอน */
       margin-top: -380px;
     }
+    .logo3:hover {
+      filter: brightness(150%); /* เพิ่มความสว่างของรูปภาพเมื่อ hover */
+      transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงเรื่อยๆ */
+    }
 
     .logo4{
       width: 480px; /* ปรับความกว้างตามต้องการ */
@@ -171,6 +179,10 @@ body {
       display: block; /* ให้แสดงเป็นบล็อก */
       margin-left: 1200px; /* จัดให้รูปภาพตรงกลางทางนอน */
       margin-top: -340px;
+    }
+    .logo4:hover {
+      filter: brightness(150%); /* เพิ่มความสว่างของรูปภาพเมื่อ hover */
+      transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงเรื่อยๆ */
     }
 
     .logo5{
@@ -181,6 +193,10 @@ body {
       margin-top: 50px;
       
     }
+    .logo5:hover {
+      filter: brightness(90%); /* เพิ่มความสว่างของรูปภาพเมื่อ hover */
+      transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงเรื่อยๆ */
+    }
 
     .logo6{
       width: 480px; /* ปรับความกว้างตามต้องการ */
@@ -188,6 +204,10 @@ body {
       display: block; /* ให้แสดงเป็นบล็อก */
       margin-left: 900px;
       margin-top: -350px;
+    }
+    .logo6:hover {
+      filter: brightness(120%); /* เพิ่มความสว่างของรูปภาพเมื่อ hover */
+      transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงเรื่อยๆ */
     }
 
   }
