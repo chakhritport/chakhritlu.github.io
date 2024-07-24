@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(143, 143, 143);
+    background-size: cover;
+    background-position: center;
+
+}
+
+li{
+    
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+    font-size: 1.5rem;
+}
+
+a:hover{
+    color: #ffae19;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.navbar .links{
+    font-weight:bolder;
+    display:  flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#hero h1{
+    font-family: "Anton SC", sans-serif;
+    opacity: 70%;
+    letter-spacing: 15px;
+    font-style: normal;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.portfo .skill {
+    font-family: "Anton SC", sans-serif;
+    letter-spacing: 5px;
+    font-style: normal;
+    font-size: 3rem;
+    height: calc(10vh - 60px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.portfo .pre {
+    height: calc(110vh - 780px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
+    margin-top: 50px; /* ปรับแต่งค่า margin-top ตามต้องการ */
+    margin-left: 40px;
+
+}
+
+.portfo .pre:hover{
+    filter: brightness(170%); /* เพิ่มความสว่างของรูปภาพเมื่อ hover */
+    transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงเรื่อยๆ */
+}
+
+.portfo .pho{
+    height: calc(110vh - 800px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
+    margin-left: 55px;
+}
+
+.portfo .pho:hover{
+    filter: brightness(170%); /* เพิ่มความสว่างของรูปภาพเมื่อ hover */
+    transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงเรื่อยๆ */
+}
+
+.portfo .after{
+    height: calc(110vh - 800px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
+    margin-left: 60px;
+}
+
+.portfo .after:hover{
+    filter: brightness(170%); /* เพิ่มความสว่างของรูปภาพเมื่อ hover */
+    transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงเรื่อยๆ */
+}
+
+.portfo .blen{
+    height: calc(110vh - 800px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
+    margin-left: 60px;
+}
+
+.portfo .blen:hover{
+    filter: brightness(130%); /* เพิ่มความสว่างของรูปภาพเมื่อ hover */
+    transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงเรื่อยๆ */
+}
+
+.portfo .illi{
+    height: calc(110vh - 800px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
+    margin-left: 60px;
+}
+
+.portfo .illi:hover{
+    filter: brightness(170%); /* เพิ่มความสว่างของรูปภาพเมื่อ hover */
+    transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงเรื่อยๆ */
+}
+
+
+@media (max-width: 992px){
+    .navbar .links{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+    
+}
+
+@media (max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
