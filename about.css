@@ -6,8 +6,10 @@
 }
 
 body{
+    
     height: 100vh;
     background-color: rgb(102, 102, 102);
+    background-image: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80);
     background-size: cover;
     background-position: center;
 
@@ -107,28 +109,47 @@ section#hero{
 }
 
 .abo1{
-    opacity: 80%;
+    border-radius: 10px;
     width: 100%;
     max-width: 500px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
-    margin: 0 auto;
+    margin: 5rem auto;
+    
 }
 
 .about-content{
-
+    line-height: 1.6; /* ปรับระยะห่างระหว่างบรรทัดเพิ่มขึ้น */
     color: white;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
     text-align: left; /* จัดให้ข้อความชิดขวา */
-    margin: 0 auto;
-    max-width: 500px; /* ปรับขนาดเพิ่มหรือลดตามที่ต้องการ */
+    margin: -5rem auto;
+    max-width: 600px; /* เพิ่มความกว้างสูงสุดเพื่อให้ข้อความตัดตัวอักษรได้ดีขึ้น */
+    padding: 20px; /* เพิ่มการเว้นระยะห่างเพื่อปรับปรุงช่องว่าง */
+    
 }
 
+.about-content h2 {
+    font-size: 2.5rem; /* เพิ่มขนาดตัวอักษรสำหรับหัวข้อ */
+    margin-bottom: 1rem;
+}
 
+.about-content ul {
+    margin-bottom: 1.5rem;
+}
+
+.about-content li {
+    font-size: 1.1rem; /* ปรับขนาดตัวอักษรสำหรับรายการ */
+    margin-bottom: 0.5rem;
+}
+
+.about-content hr {
+    margin: 2rem 0; /* ปรับระยะห่างสำหรับเส้นแบ่ง */
+}
 
 @media (max-width: 992px){
     .navbar .links{
@@ -149,5 +170,11 @@ section#hero{
     .dropdown_menu{
         left: 2rem;
         width: unset;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        max-width: 100%; /* ปรับความกว้างสูงสุดสำหรับหน้าจอขนาดเล็ก */
     }
 }
