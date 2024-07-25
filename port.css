@@ -6,11 +6,11 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
     background-color: rgb(143, 143, 143);
     background-size: cover;
     background-position: center;
-
 }
 
 li{
@@ -117,80 +117,58 @@ section#hero{
     justify-content: center;
     text-align: center;
     color: white;
+    padding: 50px;
 }
 
 .portfo .pre {
-    height: calc(110vh - 780px);
+    width: 100%;
+    max-width: 450px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
-    margin-top: 50px; /* ปรับแต่งค่า margin-top ตามต้องการ */
-    margin-left: 40px;
-
+    margin: 0 auto;
 }
 
-.portfo .pre:hover{
-    filter: brightness(170%); /* เพิ่มความสว่างของรูปภาพเมื่อ hover */
-    transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงเรื่อยๆ */
-}
-
-.portfo .pho{
-    height: calc(110vh - 800px);
+.portfo .pho {
+    width: 100%;
+    max-width: 400px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
-    margin-left: 55px;
+    margin: 0 auto;
 }
 
-.portfo .pho:hover{
-    filter: brightness(170%); /* เพิ่มความสว่างของรูปภาพเมื่อ hover */
-    transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงเรื่อยๆ */
-}
-
-.portfo .after{
-    height: calc(110vh - 800px);
+.portfo .after {
+    width: 100%;
+    max-width: 400px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
-    margin-left: 60px;
+    margin: 0 auto;
 }
 
-.portfo .after:hover{
-    filter: brightness(170%); /* เพิ่มความสว่างของรูปภาพเมื่อ hover */
-    transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงเรื่อยๆ */
-}
-
-.portfo .blen{
-    height: calc(110vh - 800px);
+.portfo .blen {
+    width: 100%;
+    max-width: 400px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
-    margin-left: 60px;
+    margin: 0 auto;
 }
 
-.portfo .blen:hover{
-    filter: brightness(130%); /* เพิ่มความสว่างของรูปภาพเมื่อ hover */
-    transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงเรื่อยๆ */
-}
-
-.portfo .illi{
-    height: calc(110vh - 800px);
+.portfo .illi {
+    width: 100%;
+    max-width: 400px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
-    margin-left: 60px;
+    margin: 0 auto;
 }
-
-.portfo .illi:hover{
-    filter: brightness(170%); /* เพิ่มความสว่างของรูปภาพเมื่อ hover */
-    transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้มีการเปลี่ยนแปลงเรื่อยๆ */
-}
-
 
 @media (max-width: 992px){
     .navbar .links{
