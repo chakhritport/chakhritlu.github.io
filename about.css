@@ -106,25 +106,26 @@ section#hero{
     margin-bottom: 1rem;
 }
 
-.about-content .abo1{
-    height: calc(110vh - 780px);
+.abo1{
+    opacity: 80%;
+    width: 100%;
+    max-width: 500px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
-    margin-top: 50px; /* ปรับแต่งค่า margin-top ตามต้องการ */
-    margin-left: 40px;
-
+    margin: 0 auto;
 }
 
 .about-content{
-    height: calc(110vh - 780px);
+
+    color: white;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
-    margin-top: 50px; /* ปรับแต่งค่า margin-top ตามต้องการ */
-    margin-left: 40px;
+    text-align: left; /* จัดให้ข้อความชิดขวา */
+    margin: 0 auto;
+    max-width: 500px; /* ปรับขนาดเพิ่มหรือลดตามที่ต้องการ */
 }
 
 

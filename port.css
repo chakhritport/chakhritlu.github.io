@@ -120,6 +120,8 @@ section#hero{
     padding: 50px;
 }
 
+
+
 .portfo .pre {
     width: 100%;
     max-width: 450px;
@@ -128,6 +130,11 @@ section#hero{
     justify-content: center;
     text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
     margin: 0 auto;
+}
+
+.portfo .pre:hover {
+    filter: brightness(170%); /* เพิ่มสีสว่างขึ้นเมื่อมีการโฮเวอร์ */
+    transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้การเปลี่ยนแปลงมีความเรียบร้อย */
 }
 
 .portfo .pho {
@@ -140,6 +147,12 @@ section#hero{
     margin: 0 auto;
 }
 
+.portfo .pho:hover {
+    filter: brightness(170%); /* เพิ่มสีสว่างขึ้นเมื่อมีการโฮเวอร์ */
+    transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้การเปลี่ยนแปลงมีความเรียบร้อย */
+
+}
+
 .portfo .after {
     width: 100%;
     max-width: 400px;
@@ -148,6 +161,12 @@ section#hero{
     justify-content: center;
     text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
     margin: 0 auto;
+}
+
+.portfo .after:hover {
+    filter: brightness(170%); /* เพิ่มสีสว่างขึ้นเมื่อมีการโฮเวอร์ */
+    transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้การเปลี่ยนแปลงมีความเรียบร้อย */
+
 }
 
 .portfo .blen {
@@ -160,6 +179,12 @@ section#hero{
     margin: 0 auto;
 }
 
+.portfo .blen:hover {
+    filter: brightness(130%); /* เพิ่มสีสว่างขึ้นเมื่อมีการโฮเวอร์ */
+    transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้การเปลี่ยนแปลงมีความเรียบร้อย */
+
+}
+
 .portfo .illi {
     width: 100%;
     max-width: 400px;
@@ -168,6 +193,12 @@ section#hero{
     justify-content: center;
     text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
     margin: 0 auto;
+}
+
+.portfo .illi:hover {
+    filter: brightness(170%); /* เพิ่มสีสว่างขึ้นเมื่อมีการโฮเวอร์ */
+    transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้การเปลี่ยนแปลงมีความเรียบร้อย */
+
 }
 
 @media (max-width: 992px){
