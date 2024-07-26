@@ -188,3 +188,6 @@ footer{
     animation: moveText 0.5s ease infinite alternate;
   }
   
+  html {
+    scroll-behavior: smooth;
+}

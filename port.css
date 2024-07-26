@@ -125,6 +125,7 @@ section#hero{
 
 
 .portfo .pre {
+
     width: 100%;
     max-width: 450px;
     flex-direction: column;
@@ -204,6 +205,7 @@ section#hero{
 }
 
 .adopre{
+    
     margin-top: 300px;
     padding: 20px;
     opacity: 2;
@@ -212,11 +214,37 @@ section#hero{
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.5); /* ทำให้พื้นหลังของ adopre โปร่งใส */
+    
 
 }
 
+.adopre .ubu{
+    
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
+    margin-top: 50px;
+}
+
+.adopre .remixx{
+    
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
+
+}
+
+.adopre iframe {
+    
+    margin: 20px; /* ปรับค่าให้เหมาะสม */
+}
 
 .preme {
+    
     font-size: 3rem;
     color: white;
     position: relative; /* ต้องตั้งค่าตำแหน่งเพื่อให้ ::after ทำงาน */
@@ -253,4 +281,8 @@ section#hero{
         left: 2rem;
         width: unset;
     }
+}
+
+html {
+    scroll-behavior: smooth;
 }
