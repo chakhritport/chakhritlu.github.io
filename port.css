@@ -266,22 +266,13 @@ section#hero{
 }
 
 .preme {
-    
+    text-align: center;
     font-size: 3rem;
     color: white;
     position: relative; /* ต้องตั้งค่าตำแหน่งเพื่อให้ ::after ทำงาน */
 }
 
-.preme::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -20px; /* ระยะห่างระหว่างข้อความและเส้นใต้ */
-    width: 30%; /* ความยาวของเส้นใต้ (ปรับตามต้องการ) */
-    height: 9px; /* ความหนาของเส้น */
-    background-color: #6b52f5; /* สีของเส้น */
 
-}
 
 
 
@@ -326,6 +317,15 @@ section#hero{
     margin-right: 30px;
 }
 
+.adopho {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    position: relative; /* ต้องตั้งค่าตำแหน่งเพื่อให้ ::after ทำงาน */
+}
+
+
+
 .adopre .sameri {
     max-height: 300px;
     width: 100%;
@@ -355,8 +355,16 @@ section#hero{
     min-height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* ทำให้พื้นหลังของ adopre โปร่งใส */
-    text-align: center;
+
 }
+
+.adoaff {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    position: relative; /* ต้องตั้งค่าตำแหน่งเพื่อให้ ::after ทำงาน */
+}
+
 
 .ble{
     background-image: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80);
@@ -368,7 +376,60 @@ section#hero{
     min-height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* ทำให้พื้นหลังของ adopre โปร่งใส */
+
+}
+.ble {
     text-align: center;
+    font-size: 2rem;
+    color: white;
+    position: relative; /* ต้องตั้งค่าตำแหน่งเพื่อให้ ::after ทำงาน */
+}
+
+
+.ble .bb {
+    border-radius: 30px;
+    width: 100%;
+    max-width: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.ill{
+    background-image: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80);
+    background-size: cover;
+    background-position: center;
+    margin-top: 300px;
+    padding: 20px;
+    opacity: 2;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* ทำให้พื้นหลังของ adopre โปร่งใส */
+
+}
+
+.ill {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    position: relative; /* ต้องตั้งค่าตำแหน่งเพื่อให้ ::after ทำงาน */
+}
+
+.ill .ilii {
+    border-radius: 30px;
+    width: 100%;
+    max-width: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-right: 30px;
 }
 
 
