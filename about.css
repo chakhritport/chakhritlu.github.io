@@ -9,7 +9,7 @@ body {
     height: 200vh;
     margin: 0;
     position: relative; /* ตั้งค่า position เป็น relative เพื่อให้ pseudo-element ทำงานได้ */
-    overflow: hidden;
+ 
 }
 
 body::before {
@@ -43,8 +43,12 @@ a:hover{
 }
 
 header{
-    position: relative;
+    
+    position: sticky; /* ทำให้ header ติดอยู่ที่ด้านบน */
+    top: 0; /* ระบุระยะทางที่ header จะอยู่ห่างจากด้านบน */
+    z-index: 1000; /* ตั้งค่า z-index เพื่อให้ header อยู่ด้านบนสุด */
     padding: 0 2rem;
+    width: 100%;
 }
 
 .navbar{

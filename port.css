@@ -30,8 +30,13 @@ a:hover{
 }
 
 header{
-    position: relative;
+    
+    position: sticky; /* ทำให้ header ติดอยู่ที่ด้านบน */
+    top: 0; /* ระบุระยะทางที่ header จะอยู่ห่างจากด้านบน */
+    z-index: 1000; /* ตั้งค่า z-index เพื่อให้ header อยู่ด้านบนสุด */
     padding: 0 2rem;
+    width: 100%;
+
 }
 
 .navbar{
@@ -134,11 +139,13 @@ section#hero{
     justify-content: center;
     text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
     margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .portfo .pre:hover {
     filter: brightness(170%); /* เพิ่มสีสว่างขึ้นเมื่อมีการโฮเวอร์ */
     transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้การเปลี่ยนแปลงมีความเรียบร้อย */
+    transform: scale(1.1); /* ขยายภาพเป็น 110% */
 }
 
 .portfo .pho {
@@ -149,12 +156,13 @@ section#hero{
     justify-content: center;
     text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
     margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .portfo .pho:hover {
     filter: brightness(170%); /* เพิ่มสีสว่างขึ้นเมื่อมีการโฮเวอร์ */
     transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้การเปลี่ยนแปลงมีความเรียบร้อย */
-
+    transform: scale(1.1); /* ขยายภาพเป็น 110% */
 }
 
 .portfo .after {
@@ -165,12 +173,13 @@ section#hero{
     justify-content: center;
     text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
     margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .portfo .after:hover {
     filter: brightness(170%); /* เพิ่มสีสว่างขึ้นเมื่อมีการโฮเวอร์ */
     transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้การเปลี่ยนแปลงมีความเรียบร้อย */
-
+    transform: scale(1.1); /* ขยายภาพเป็น 110% */
 }
 
 .portfo .blen {
@@ -181,12 +190,13 @@ section#hero{
     justify-content: center;
     text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
     margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .portfo .blen:hover {
     filter: brightness(130%); /* เพิ่มสีสว่างขึ้นเมื่อมีการโฮเวอร์ */
     transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้การเปลี่ยนแปลงมีความเรียบร้อย */
-
+    transform: scale(1.1); /* ขยายภาพเป็น 110% */
 }
 
 .portfo .illi {
@@ -197,15 +207,17 @@ section#hero{
     justify-content: center;
     text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
     margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .portfo .illi:hover {
     filter: brightness(170%); /* เพิ่มสีสว่างขึ้นเมื่อมีการโฮเวอร์ */
     transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้การเปลี่ยนแปลงมีความเรียบร้อย */
-
+    transform: scale(1.1); /* ขยายภาพเป็น 110% */
 }
 
 .adopre{
+    
     background-image: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80);
     background-size: cover;
     background-position: center;
@@ -250,7 +262,6 @@ section#hero{
 }
 
 .adopre iframe {
-    
     margin: 20px; /* ปรับค่าให้เหมาะสม */
 }
 
@@ -272,14 +283,10 @@ section#hero{
 
 }
 
-.pho {
 
-    font-size: 3rem;
-    color: white;
-
-}
 
 .adopho{
+    
     background-image: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80);
     background-size: cover;
     background-position: center;
@@ -289,8 +296,6 @@ section#hero{
     min-height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* ทำให้พื้นหลังของ adopre โปร่งใส */
-
-
 }
 
 .adopho .eat {
@@ -332,6 +337,38 @@ section#hero{
     margin: 0 auto;
     margin-top: 20px;
     margin-left: 70px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.adopre .sameri:hover {
+    transform: scale(1.1); /* ขยายภาพเป็น 110% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* เพิ่มเงาให้ภาพเพื่อความเด่นชัด */
+}
+
+.adoaff{
+    background-image: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80);
+    background-size: cover;
+    background-position: center;
+    margin-top: 300px;
+    padding: 20px;
+    opacity: 2;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* ทำให้พื้นหลังของ adopre โปร่งใส */
+    text-align: center;
+}
+
+.ble{
+    background-image: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80);
+    background-size: cover;
+    background-position: center;
+    margin-top: 300px;
+    padding: 20px;
+    opacity: 2;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* ทำให้พื้นหลังของ adopre โปร่งใส */
+    text-align: center;
 }
 
 
@@ -354,6 +391,26 @@ section#hero{
     .dropdown_menu{
         left: 2rem;
         width: unset;
+    }
+}
+
+@media (max-width: 768px) {
+    .adopre iframe, .adoaff video {
+        width: 100%;
+        height: auto;
+    }
+
+    .adopho .eat, .adopho .valo, .adopre .sameri {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        
+    }
+
+    .portfo img {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
     }
 }
 
