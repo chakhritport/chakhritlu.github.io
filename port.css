@@ -46,7 +46,7 @@ header{
 
 .navbar .logo a{
     
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bolder;
 }
 
@@ -106,6 +106,7 @@ section#hero{
     font-size: 4rem;
     margin-bottom: 1rem;
 }
+
 
 .portfo .skill {
     font-family: "Anton SC", sans-serif;
@@ -199,6 +200,36 @@ section#hero{
 .portfo .illi:hover {
     filter: brightness(170%); /* เพิ่มสีสว่างขึ้นเมื่อมีการโฮเวอร์ */
     transition: filter 0.3s ease; /* เพิ่ม transition เพื่อทำให้การเปลี่ยนแปลงมีความเรียบร้อย */
+
+}
+
+.adopre{
+    margin-top: 300px;
+    padding: 20px;
+    opacity: 2;
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5); /* ทำให้พื้นหลังของ adopre โปร่งใส */
+
+}
+
+
+.preme {
+    font-size: 3rem;
+    color: white;
+    position: relative; /* ต้องตั้งค่าตำแหน่งเพื่อให้ ::after ทำงาน */
+}
+
+.preme::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px; /* ระยะห่างระหว่างข้อความและเส้นใต้ */
+    width: 30%; /* ความยาวของเส้นใต้ (ปรับตามต้องการ) */
+    height: 9px; /* ความหนาของเส้น */
+    background-color: #6b52f5; /* สีของเส้น */
 
 }
 
