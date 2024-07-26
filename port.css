@@ -35,6 +35,7 @@ header{
 }
 
 .navbar{
+    
     width: 100%;
     height: 60px;
     max-width: 1200px;
@@ -205,7 +206,9 @@ section#hero{
 }
 
 .adopre{
-    
+    background-image: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80);
+    background-size: cover;
+    background-position: center;
     margin-top: 300px;
     padding: 20px;
     opacity: 2;
@@ -235,7 +238,15 @@ section#hero{
     align-items: center;
     justify-content: center;
     text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
+}
 
+.adopre .hide{
+    
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
 }
 
 .adopre iframe {
@@ -260,6 +271,44 @@ section#hero{
     background-color: #6b52f5; /* สีของเส้น */
 
 }
+
+.pho {
+
+    font-size: 3rem;
+    color: white;
+
+}
+
+.adopho{
+    background-image: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80);
+    background-size: cover;
+    background-position: center;
+    margin-top: 300px;
+    padding: 20px;
+    opacity: 2;
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5); /* ทำให้พื้นหลังของ adopre โปร่งใส */
+    display: flex;
+    flex-direction: column; /* ทำให้เนื้อหาอยู่ในแนวตั้ง */
+    align-items: flex-start; /* จัดแนวเนื้อหาไปที่ด้านซ้าย */
+
+}
+
+.adopho .eat {
+    border-radius: 30px;
+    width: 100%;
+    max-width: 450px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
+    margin: 0 auto;
+    
+}
+
 
 @media (max-width: 992px){
     .navbar .links{
