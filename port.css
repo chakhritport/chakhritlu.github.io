@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Mitr", sans-serif;
 }
 
 body{
@@ -324,7 +324,135 @@ section#hero{
     position: relative; /* ต้องตั้งค่าตำแหน่งเพื่อให้ ::after ทำงาน */
 }
 
+.image-container {
+    position: relative;
+    display: inline-block; /* เพื่อให้ container มีขนาดตามเนื้อหา */
+}
 
+/* ปรับให้ข้อความอยู่ตรงกลางของรูปภาพ */
+.overlay {
+    font-family: "Mitr", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* สีข้อความ */
+    font-size: 1.5rem; /* ขนาดข้อความ */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+/* ให้รูปภาพเต็มพื้นที่ container */
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-container1 {
+    position: relative;
+    display: inline-block; /* เพื่อให้ container มีขนาดตามเนื้อหา */
+}
+
+/* ปรับให้ข้อความอยู่ตรงกลางของรูปภาพ */
+.overlay1 {
+    font-family: "Mitr", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* สีข้อความ */
+    font-size: 1.5rem; /* ขนาดข้อความ */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+/* ให้รูปภาพเต็มพื้นที่ container */
+.image-container1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-container2 {
+    position: relative;
+    display: inline-block; /* เพื่อให้ container มีขนาดตามเนื้อหา */
+}
+
+/* ปรับให้ข้อความอยู่ตรงกลางของรูปภาพ */
+.overlay2 {
+    font-family: "Mitr", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* สีข้อความ */
+    font-size: 1.5rem; /* ขนาดข้อความ */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+/* ให้รูปภาพเต็มพื้นที่ container */
+.image-container2 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-container3 {
+    position: relative;
+    display: inline-block; /* เพื่อให้ container มีขนาดตามเนื้อหา */
+}
+
+/* ปรับให้ข้อความอยู่ตรงกลางของรูปภาพ */
+.overlay3 {
+    font-family: "Mitr", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    top: 78%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: white; /* สีข้อความ */
+    font-size: 1.5rem; /* ขนาดข้อความ */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+/* ให้รูปภาพเต็มพื้นที่ container */
+.image-container3 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-container4 {
+    position: relative;
+    display: inline-block; /* เพื่อให้ container มีขนาดตามเนื้อหา */
+}
+
+/* ปรับให้ข้อความอยู่ตรงกลางของรูปภาพ */
+.overlay4 {
+    font-family: "Mitr", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    top: 78%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    color: white; /* สีข้อความ */
+    font-size: 1.5rem; /* ขนาดข้อความ */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+/* ให้รูปภาพเต็มพื้นที่ container */
+.image-container4 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 .adopre .sameri {
     max-height: 300px;
@@ -339,6 +467,21 @@ section#hero{
     margin-left: 70px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
+
+.adopre p{
+    max-height: 300px;
+    width: 100%;
+    max-width: 450px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* จัดตำแหน่งของ logo ที่สมบูรณ์ */  
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 70px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
 
 .adopre .sameri:hover {
     transform: scale(1.1); /* ขยายภาพเป็น 110% */

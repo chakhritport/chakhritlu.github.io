@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Mitr", sans-serif;
 }
 
 body{
     height: 100vh;
     background-color: rgb(0, 0, 0);
-    background-image: url('https://media.discordapp.net/attachments/577827459563651074/1265750333578018878/main.png?ex=66a49f9c&is=66a34e1c&hm=4760284888d8af73d54e6ebfc856e68ab646e3c83cc5932419f93ffef6b66ca6&=&format=webp&quality=lossless&width=525&height=350');
+    background-image: url('https://scontent.fnak2-1.fna.fbcdn.net/v/t39.30808-6/453191438_856661996363907_3659677911309180403_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=w-BMM80qOA8Q7kNvgFXUoqI&_nc_ht=scontent.fnak2-1.fna&oh=00_AYDiPEGMLzuqxlvJYCTbvl9uUskv05rPIfqXXr-qa1sV8g&oe=66AACC1D');
     background-size: cover;
     background-position: center;
 
@@ -165,7 +165,6 @@ footer{
 
 .footcon{
     border-radius: 10px;
-    font-weight: bold;
     font-size: 1.1rem;
     padding: 20px;
     background-color: #5f5f5f;
